@@ -1,12 +1,12 @@
 import React from "react";
-import { render } from "react-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <main>
-      <h1>Movieflix</h1>
-    </main>
+    <div className="movieflix">
+      <Navbar />
+    </div>
   );
 };
 
-render(<App />, document.getElementById("root"));
+export default App;
