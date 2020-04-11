@@ -1,0 +1,21 @@
+.primary-navigation {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  margin-left: 20px;
+  a {
+    font-size: 14px;
+    color: #e5e5e5;
+    transition: color 400ms;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: #b3b3b3;
+    }
+  }
+}
