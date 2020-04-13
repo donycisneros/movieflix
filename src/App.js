@@ -6,13 +6,13 @@ const App = () => {
   for (let i = 0; i < 80; i++) {
     loop.push(i);
   }
+  const loopMap = loop.map((l) => <p key={l}>{l}</p>);
+  const styles = { paddingTop: "68px" };
 
   return (
     <div className="movieflix">
       <Header />
-      {loop.map((l) => (
-        <p key={l}>{l}</p>
-      ))}
+      <div style={styles}>{loopMap}</div>
     </div>
   );
 };
