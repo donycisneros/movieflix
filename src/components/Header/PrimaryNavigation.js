@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "./Logo";
 
 const PrimaryNavigation = () => {
   const [navUrls] = useState([
@@ -10,13 +11,16 @@ const PrimaryNavigation = () => {
   ]);
 
   return (
-    <ul className="primary-navigation">
-      {navUrls.map(({ id, text, url }) => (
-        <li key={id} className="navigation-item">
-          <a href={url}>{text}</a>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <Logo />
+      {/* <ul className="primary-navigation">
+        {navUrls.map(({ id, text, url }) => (
+          <li key={id} className="navigation-item">
+            <a href={url}>{text}</a>
+          </li>
+        ))}
+      </ul> */}
+    </div>
   );
 };
 

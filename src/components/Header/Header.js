@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "./Logo";
 import PrimaryNavigation from "./PrimaryNavigation";
 import SecondaryNavigation from "./SecondaryNavigation";
 import { useScroll } from "../../hooks/useScroll";
@@ -9,10 +8,8 @@ const Header = () => {
 
   return (
     <header className="nav-header">
-      <Logo />
-      {/* <h1>Movieflix</h1> */}
       <PrimaryNavigation />
-      <SecondaryNavigation />
+      {/* <SecondaryNavigation /> */}
     </header>
   );
 };

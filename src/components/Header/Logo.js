@@ -1,10 +1,12 @@
 import React from "react";
-import logo from "../../assets/images/movieflix.svg";
+import movieflix from "../../assets/images/logo/movieflix.svg";
+import movieflixMobile from "../../assets/images/logo/movieflix-mobile.svg";
 
 const Logo = () => {
   return (
     <a href="/" className="logo">
-      <img src={logo} alt="logo" />
+      {/* <img src={movieflix} alt="logo" /> */}
+      <img src={movieflixMobile} alt="logo" />
     </a>
   );
 };
