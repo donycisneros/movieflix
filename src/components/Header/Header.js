@@ -1,6 +1,6 @@
 import React from "react";
-import PrimaryNavigation from "./PrimaryNavigation";
-import SecondaryNavigation from "./SecondaryNavigation";
+import NavigationPrimary from "./NavigationPrimary";
+import NavigationSecondary from "./NavigationSecondary";
 import { useScroll } from "../../hooks/useScroll";
 
 const Header = () => {
@@ -8,8 +8,8 @@ const Header = () => {
 
   return (
     <header className="nav-header">
-      <PrimaryNavigation />
-      {/* <SecondaryNavigation /> */}
+      <NavigationPrimary />
+      {/* <NavigationSecondary /> */}
     </header>
   );
 };

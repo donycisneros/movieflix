@@ -1,6 +1,6 @@
 import React from "react";
 
-const SecondaryNavigation = () => {
+const NavigationSecondary = () => {
   return (
     <div className="secondary-navigation">
       <div className="navigation-item">GIFT</div>
@@ -16,4 +16,4 @@ const SecondaryNavigation = () => {
   );
 };
 
-export default SecondaryNavigation;
+export default NavigationSecondary;
