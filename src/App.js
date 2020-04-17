@@ -7,7 +7,12 @@ const App = () => {
     loop.push(i);
   }
   const loopMap = loop.map((l) => <p key={l}>{l}</p>);
-  const styles = { paddingTop: "68px" };
+
+  const styles = {
+    paddingTop: "50px",
+    paddingBottom: "56px",
+    height: "100%",
+  };
 
   return (
     <div className="movieflix">

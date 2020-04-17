@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="nav-header">
       <NavigationPrimary />
-      {/* <NavigationSecondary /> */}
+      <NavigationSecondary />
     </header>
   );
 };
