@@ -1,29 +1,25 @@
 import React, { useState } from "react";
-import homeIcon from "../../assets/images/icons/home.svg";
-import searchIcon from "../../assets/images/icons/search.svg";
-import trailersIcon from "../../assets/images/icons/trailers.svg";
-import seenIcon from "../../assets/images/icons/seen.svg";
-import moreIcon from "../../assets/images/icons/more.svg";
+import { Home, Search, Trailers, Seen, More } from "./MobileIcons";
 
 const NavigationSecondary = () => {
   const [secondaryNavigationMobile] = useState([
-    { text: "Inicio", link: "/", icon: homeIcon },
-    { text: "Buscar", link: "/search", icon: searchIcon },
-    { text: "Próximamente", link: "/trailers", icon: trailersIcon },
-    { text: "Visto", link: "/seen", icon: seenIcon },
-    { text: "Más", link: "/more", icon: moreIcon },
+    { text: "Inicio", link: "/", icon: Home },
+    { text: "Buscar", link: "/search", icon: Search },
+    { text: "Próximamente", link: "/trailers", icon: Trailers },
+    { text: "Visto", link: "/seen", icon: Seen },
+    { text: "Más", link: "/more", icon: More },
   ]);
 
-  const classLink = (link) =>
+  const classActive = (link) =>
     window.location.pathname === link
       ? "navigation-tab active"
       : "navigation-tab";
 
-  const navegationMobile = (
+  const navigationMobile = (
     <div className="secondary-navigation-mobile">
       {secondaryNavigationMobile.map(({ text, link, icon }) => (
-        <a key={text} href={link} className={classLink(link)}>
-          <img src={icon} alt={text} />
+        <a key={text} href={link} className={classActive(link)}>
+          <span>{icon}</span>
           <p>{text}</p>
         </a>
       ))}
@@ -39,7 +35,7 @@ const NavigationSecondary = () => {
         <div className="navigation-item">TOOLTIP</div>
         <div className="navigation-item">USER</div>
       </div>
-      {navegationMobile}
+      {navigationMobile}
     </div>
   );
 };
