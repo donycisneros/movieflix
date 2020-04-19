@@ -1,8 +1,14 @@
-.primary-navigation {
+.primary-navigation,
+.primary-navigation-mobile {
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+.primary-navigation-desktop,
+.primary-navigation-tablet {
+  display: none;
 }
 
 .navigation-tabs {
@@ -17,7 +23,7 @@
 .navigation-item {
   // margin-left: 20px;
   // font-size: 1.35rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   a {
     color: #e5e5e5;

@@ -1,6 +1,6 @@
-.secondary-navigation-container {
+.secondary-navigation {
   background-color: #191919;
-  height: 57px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -10,7 +10,8 @@
   left: 0;
 }
 
-.secondary-navigation {
+.secondary-navigation-desktop,
+.secondary-navigation-tablet {
   display: none;
 }
 
@@ -37,8 +38,9 @@
 
 .navigation-tab p {
   color: #747474;
-  margin: 5px 0 0;
+  margin: 3px 0 0;
   font-weight: 400;
+  font-size: 0.85rem;
 }
 
 .navigation-tab.active span svg path {

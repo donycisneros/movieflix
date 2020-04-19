@@ -1,6 +1,6 @@
 import React from "react";
-import NavigationPrimary from "./NavigationPrimary";
-import NavigationSecondary from "./NavigationSecondary";
+import NavigationPrimary from "./NavigationPrimary/NavigationPrimary";
+import NavigationSecondary from "./NavigationSecondary/NavigationSecondary";
 import { useScroll } from "../../hooks/useScroll";
 
 const Header = () => {
